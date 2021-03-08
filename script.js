@@ -66,35 +66,30 @@ for(let i=0; i<exp.length; i++){
     }
 }
 
-
 let img = "light"
 function changeTheme(){
     let theme = document.body
     theme.classList.toggle("darkMode")
     let a = document.getElementById("image")
-    let l_P = document.getElementById("lk_P")
-    let f_P = document.getElementById("fb_P")
-    let ig_P = document.getElementById("ig_P")
-    let l = document.getElementById("lk")
-    let f = document.getElementById("fb")
-    let ig = document.getElementById("ig")
+    let l = document.getElementsByClassName("lk")
+    let f = document.getElementsByClassName("fb")
+    let ig = document.getElementsByClassName("ig")
     if(img == "light"){
         a.src = "image/Group 1_dm.png"
-        l_P.src = "image/linkedin_dt.png"
-        f_P.src = "image/facebook_dt.png"
-        ig_P.src = "image/instagram_dt.png"
-        l.src = "image/linkedin_dt.png"
-        f.src = "image/facebook_dt.png"
-        ig.src = "image/instagram_dt.png"
+        for(let i=0; i<l.length; i++){
+            l[i].src = "image/linkedin_dt.png"
+            f[i].src = "image/facebook_dt.png"
+            ig[i].src = "image/instagram_dt.png"
+        }
         img = "dark"
     }else{
         a.src = "image/Group 1.png"
-        l_P.src = "image/linkedin.png"
-        f_P.src = "image/facebook.png"
-        ig_P.src = "image/instagram.png"
-        l.src = "image/linkedin.png"
-        f.src = "image/facebook.png"
-        ig.src = "image/instagram.png"
+        for(let i=0; i<l.length; i++){
+            l[i].src = "image/linkedin.png"
+            f[i].src = "image/facebook.png"
+            ig[i].src = "image/instagram.png"
+        }
         img = "light"
     }
+
 }
