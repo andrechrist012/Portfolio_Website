@@ -1,0 +1,87 @@
+.darkMode{
+    background-color: #5a5a5a;
+}
+
+.darkMode .firstPage{
+    background-image: linear-gradient(black, #5a5a5a);
+}
+
+.darkMode .sideBar{
+    background-color: black;
+}
+
+.darkMode .navBackground{
+    background-color: black;
+}
+
+.darkMode nav .linkPage > a:hover{
+    color: rgb(161, 161, 161);
+}
+
+.darkMode nav .linkPage .navActive{
+    color: rgb(161, 161, 161);
+}
+
+.darkMode  .profilePage > .profile > .profileTitle2{
+    color: black;
+}
+
+.darkMode .myStatus{
+    color: rgb(202, 202, 202);
+}
+
+.darkMode .profilePage > .profile > .profileInfo{
+    color: black;
+}
+
+.darkMode .learnMore{
+    color: white;
+}
+
+.darkMode .expPage > .expTitle{
+    color: black;
+}
+
+.darkMode .expPage > .expInfo{
+    color: black;
+}
+
+.darkMode .collaps {
+    background-color: black;
+}
+
+.darkMode .content {
+    background-color: black;
+}
+
+.darkMode .thirdPage{
+    background-image: linear-gradient(#5a5a5a, black)
+}
+
+.darkMode .skillPage > .skillTitle{
+    color: black;
+}
+
+.darkMode .skillPage > .skillInfo{
+    color: black;
+}
+
+.darkMode .fourPage{
+    background-image: linear-gradient(black, #5a5a5a);
+}
+
+.darkMode .messageForm input{
+    border: 1px solid black;
+}
+
+.darkMode .messageForm textarea{
+    border: 1px solid black;
+}
+
+.darkMode .messageForm button{
+    background-color: black;
+}
+
+.darkMode .footer{
+    background-color: black;
+}

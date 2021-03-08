@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkTheme.css">
+    <link rel="icon" href="image/me.png" type="image/x-icon">
+</head>
+<body onload="realTime();">
+    <div class="sideBar" id="sideNavBar">
+        <a onclick="closeSideBar()"><img src="image/close.png" alt=""></a>
+        <a href="#profile" onclick="closeSideBar()">Profile</a>
+        <a href="#experience" onclick="closeSideBar()">Experience</a>
+        <a href="#skill" onclick="closeSideBar()">Skill</a>
+        <a href="#contact" onclick="closeSideBar()">Contact</a>
+    </div>
+    <nav id="nav">
+        <div class="menuBar">
+            <a onclick="openSideBar()"><img src="image/bar.png" alt="menuBar"></a>
+        </div>
+        <div class="linkPage">
+            <a href="#profile" id="p" class="navActive">Profile</a>
+            <a href="#experience" id="e">Experience</a>
+            <a href="#skill" id="s">Skill</a>
+            <a href="#contact" id="c">Contact</a>
+        </div>
+        <div class="time_toggle">
+            <div class="realTime" id="time"></div>
+            <div class="changeTheme">
+                <label class="switchTheme">
+                    <input type="checkbox" onclick="changeTheme();">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <section class="firstPage">
+        <section class="profilePage" id="profile">
+            <img src="image/me.png" alt="Andre Christian">
+            <div class="profile">
+                <p class="profileTitle">Hi There,</p>
+                <p class="profileTitle2">I'm a <span class="myStatus">Student</span><br> at BINUS University.</p>
+                <p class="profileInfo">My name is <strong>Andre Christian</strong>,<br> I'm a student at BUNIS University.</p>
+                <div class="sosmed">
+                    <a href="#"><img src="image/linkedin.png" alt="linkedin" id="lk_P"></a>
+                    <a href="#"><img src="image/facebook.png" alt="facebook" id="fb_P"></a>
+                    <a href="#"><img src="image/instagram.png" alt="instagram" id="ig_P"></a>
+                </div>
+            </div>
+        </section> 
+        <center>
+            <h3 class="learnMore">Learn More</h3>
+            <a href="#experience"><img class="learnMore_icon" id="image" src="image/Group 1.png" alt="simbol"></a>
+        </center> 
+    </section>
+    <section class="expPage" id="experience">
+        <p class="expTitle">My Experience</p>
+        <p class="expInfo">I have been in a group doing an activity, and from that activity, I have gained a lot of experience.</p>
+        <div class="myExp">
+            <div class="experience">
+                <button class="collaps">
+                    BNCC Activist
+                </button>
+                <div class="content">
+                    <img src="image/bncc.png">
+                    <p>BNCC is a computer club at BINUS. When I became an activist, I learned many things, such as coding, critical thinking, brainstorming, etc.</p>
+                </div>
+            </div>
+            <div class="experience">
+                <button class="collaps">
+                    BNEC Member
+                </button>
+                <div class="content">
+                    <img src="image/bnec.png">
+                    <p>BNEC is an English club in BINUS. When I became a member, I took English classes such as TOEFL, public speaking, storytelling, etc.</p>
+                </div>
+            </div>
+            <div class="experience">
+                <button class="collaps">
+                    LCD Operator GKI
+                </button>
+                <div class="content">
+                    <img src="image/lcd.png">
+                    <p>At GKI, there is a multimedia team that manages slides, cameras, and audio during worship. When I was an LDC operator, I was in charge of designing and running slides.</p>
+                </div>
+            </div>
+            <div class="experience">
+                <button class="collaps">
+                    DSC Member
+                </button>
+                <div class="content">
+                    <img src="image/dsc.png">
+                    <p>DSC is a coding community in BINUS. When I was a member, I learned front-end development with HTML, CSS, and JS.</p>
+                </div>
+            </div>
+            <div class="experience">
+                <button class="collaps">
+                    TPM Front-End
+                </button>
+                <div class="content">
+                    <img src="image/tpm.png">
+                    <p>At BNCC there is an activity called TPM. There, my friends and I created an event website. I'm working on the front-end.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="thirdPage">
+        <section class="skillPage" id="skill">
+            <p class="skillTitle">My Skill</p>
+            <p class="skillInfo">My goal is to become a front end web developer, and this is the skill I have to achieve my goals.</p>
+            <div class="mySkill">
+                <div class="skill">
+                    <img src="image/html.png" alt="html">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill">
+                    <img src="image/css.png" alt="css">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill">
+                    <img src="image/js.png" alt="js">
+                    <h3>JS</h3>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="fourPage">
+        <section class="contactPage">
+            <section class="formPage" id="contact">
+                <p>Send Me a Message</p>
+                <div class="line"></div>
+                <form action="" class="messageForm">
+                    <div class="left">
+                        <input type="text" placeholder="name">
+                        <input type="text" placeholder="email">
+                        <div class="sosmed">
+                            <a href="#"><img src="image/linkedin.png" alt="linkedin" id="lk"></a>
+                            <a href="#"><img src="image/facebook.png" alt="facebook" id="fb"></a>
+                            <a href="#"><img src="image/instagram.png" alt="instagram" id="ig"></a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <button type="submit" class="sendMessage">Send</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+    <footer class="footer">
+        <p>Copyright © 2021 Andre Christian</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
